@@ -8,14 +8,15 @@
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQ4zJ3o7gk+r1UJ1z+0UjzBqD1uZj3yZ9aTg4RjzR4ZQS26OL1ewqWE2Q" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Jqurey -->
-    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ...></script> -->
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- copy icon from this link -- https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
 
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
   <body>
@@ -34,55 +35,43 @@
     <!-- top navbar -->
 
     <!-- navbar -->
-    <nav class="navbar top-fixed navbar-expand-lg navbar-light bg-light">    
-       <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" width="90" height="90" alt="">
-          </a>
+<nav class="navbar top-fixed navbar-expand-lg navbar-light bg-light">    
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" width="90" height="90" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-          <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="navbar-brand" href="#home"> Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="navbar-brand" href="#about">About</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> -->
-                <li class="nav-item">
-                <a class="navbar-brand" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar-brand" href="#">Download</a>
-                </li>
-          </ul>
-            <div class="float-right">
-              <button class="btn btn-outline-primary">Join Me</button>
-            </div>
-        </div>
-       </div>
-      </nav>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Download</a>
+        </li>
+      </ul>
+      <div>
+        <button class="btn btn-outline-primary">Join Me</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
     <!-- navbar -->
 
@@ -93,9 +82,9 @@
     <div>
         <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -135,63 +124,65 @@
 
     <!-- skills -->
 
-    <section class="container pt-5" id="about">
-        <h2>About My Skills</h2>
-        <hr>
+<section class="container py-5" id="about">
+  <h2 class="text-center fw-bold mb-4">About My Skills</h2>
+  <hr class="mb-5">
 
-        <div class="row">
-            <div class="col-lg-6 col-md-12">
-                <h4>Languages</h4>
-                
-                <h5>HTML</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 90%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-    
-                  <h5>CSS</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  
-                  <h5>JavaScript</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <hr>
-                  <h4>Library</h4>
-                  
-                  <h5>Bootstrap</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-    
-                  <h5>JQuery</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <hr>
-                  <h4>Graphics</h4>
-                  
-                  <h5>PhotoShop</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 95%" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-    
-                  <h5>Filmora</h5>
-                <div class="progress">
-                      <div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-            </div>
+  <div class="row">
+    <!-- Skills List -->
+    <div class="col-lg-6">
+      <h4 class="mb-3">Languages</h4>
 
-            <div class="col-lg-6 col-md-12">
-                <div class="text-center">
-                    <img src="img/Aditya.png" class="rounded mx-auto d-block" height="400" alt="...">
-                    <p id="aboutme" class="lead">Hello I am Aditya.This is my first website and i have made my website through "HTML,Css,Javascript & PhotoShop" .You can see at the left side that how much I know and I have experince of coding from 2 to 3 years.</p>
-                </div>
-            </div>
-        </div>
+      <p class="mb-1">HTML</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+      </div>
 
-    </section>
+      <p class="mb-1">CSS</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+      </div>
+
+      <p class="mb-1">JavaScript</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark" style="width: 80%">80%</div>
+      </div>
+
+      <hr class="my-4">
+      <h4 class="mb-3">Libraries</h4>
+
+      <p class="mb-1">Bootstrap</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+      </div>
+
+      <p class="mb-1">jQuery</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+      </div>
+
+      <hr class="my-4">
+      <h4 class="mb-3">Graphics</h4>
+
+      <p class="mb-1">Photoshop</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 95%">95%</div>
+      </div>
+
+      <p class="mb-1">Filmora</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+      </div>
+    </div>
+
+    <!-- Image and About Text -->
+    <div class="col-lg-6 text-center">
+      <img src="img/Aditya.png" class="rounded shadow img-fluid mb-3" style="max-height: 400px;" alt="Aditya">
+      <p class="lead">Hello! I am <strong>Aditya</strong>. This is my first website, built using HTML, CSS, JavaScript & Photoshop. I’ve been learning coding for 2 to 3 years and enjoy designing responsive user-friendly interfaces.</p>
+    </div>
+  </div>
+</section>
+
 
     <!-- skills -->
 
@@ -202,13 +193,13 @@
         <hr>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Web Project</a>
+              <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Web Project</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Graphic Work</a>
+              <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Graphic Work</a>
             </li>
           </ul>
           <div class="tab-content" id="pills-tabContent">
@@ -232,115 +223,143 @@
           </div>
     </section> -->
 
-    <section class="container mt-5 text-center">
-      <h2 class="font-weight-bold my-3">Project</h2>
-      <p class="grey-text lead">These are my few projects that I have been made.From few last years.</p>
-      <hr>
-      <ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Web Project</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Graphic Work</a>
-        </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p1.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">UI Designing</h4>
-                  <p class="lead grey-text"><b>UI Designing:</b>This is my first project that you should viset.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
+   <section class="container my-5" id="projects">
+  <h2 class="text-center fw-bold mb-4">Projects</h2>
+  <p class="text-center text-muted mb-4">These are my few projects that I have built over the last few years.</p>
+  <hr class="mb-5">
 
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p2.png" alt="">
-                <div class="card-body pb-0">
-                  <h4 class="font-weight-bold my-3">Books</h4>
-                  <p class="lead grey-text"><b>Books:</b>This is my second project that you should viset.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills justify-content-center mb-4" id="projectTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="web-tab" data-bs-toggle="pill" data-bs-target="#web" type="button" role="tab">Web Projects</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="graphic-tab" data-bs-toggle="pill" data-bs-target="#graphic" type="button" role="tab">Graphic Work</button>
+    </li>
+  </ul>
 
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p3.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">Mobile</h4>
-                  <p class="lead grey-text"><b>Mobile:</b>This is my third project that you should viset.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
-          </div>
+  <!-- Tab content -->
+  <div class="tab-content" id="projectTabsContent">
 
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p1.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">UI Designing</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p3.png" alt="">
-                <div class="card-body pb-0">
-                  <h4 class="font-weight-bold my-3">Books</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p2.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">Mobile</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
+    <!-- All Projects -->
+    <div class="tab-pane fade show active" id="all" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Project 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p1.png" class="card-img-top" alt="UI Designing">
+            <div class="card-body">
+              <h5 class="card-title">UI Designing</h5>
+              <p class="card-text">This is my first project that you should visit.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="row">
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p3.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">UI Designing</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p2.png" alt="">
-                <div class="card-body pb-0">
-                  <h4 class="font-weight-bold my-3">Books</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
+        <!-- Project 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p2.png" class="card-img-top" alt="Books">
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">This is my second project that you should visit.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-lg-4 col-md-12 bg-light">
-              <img class="" src="img/p1.png" alt="">
-                <div class="card-body pb-0 bg-light">
-                  <h4 class="font-weight-bold my-3">Mobile</h4>
-                  <p class="lead grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam voluptatibus placeat sunt.</p>
-                  <a class="btn btn-outline-primary btn-sm"><i class="fas fa-clone left"></i> View project</a>
-                </div>
+        <!-- Project 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p3.png" class="card-img-top" alt="Mobile">
+            <div class="card-body">
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text">This is my third project that you should visit.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Web Projects -->
+    <div class="tab-pane fade" id="web" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p1.png" class="card-img-top" alt="UI">
+            <div class="card-body">
+              <h5 class="card-title">UI Designing</h5>
+              <p class="card-text">A clean user interface design for practice.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p3.png" class="card-img-top" alt="Books">
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">A web project about digital book layout.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p2.png" class="card-img-top" alt="Mobile">
+            <div class="card-body">
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text">A responsive mobile-first design demo.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Graphic Work -->
+    <div class="tab-pane fade" id="graphic" role="tabpanel">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p3.png" class="card-img-top" alt="Graphic 1">
+            <div class="card-body">
+              <h5 class="card-title">UI Designing</h5>
+              <p class="card-text">Photoshop-based user interface mockup.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p2.png" class="card-img-top" alt="Graphic 2">
+            <div class="card-body">
+              <h5 class="card-title">Books</h5>
+              <p class="card-text">Layout design for book thumbnails.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/p1.png" class="card-img-top" alt="Graphic 3">
+            <div class="card-body">
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text">Photoshop editing for mobile mockups.</p>
+              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- project -->
 
@@ -349,9 +368,9 @@
         <h2>Achivements</h2>
         <p>These are my few achivments that i got when i was learning coding.</p>
         <hr>
-        <img class="rounded img-thumbnail mt-2 mr-1" src="img/a1.PNG" alt="">
-        <img class="rounded img-thumbnail mt-2 mr-1" src="img/a2.PNG" alt="">
-        <img class="rounded img-thumbnail mt-2 mr-1" src="img/a3.PNG" alt="">
+        <img class="rounded img-thumbnail mt-2 me-1" src="img/a1.PNG" alt="">
+        <img class="rounded img-thumbnail mt-2 me-1" src="img/a2.PNG" alt="">
+        <img class="rounded img-thumbnail mt-2 me-1" src="img/a3.PNG" alt="">
     </section>
     <!-- achivements -->
     
@@ -397,7 +416,7 @@
 
           <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <span class="mr-4">Spread the word!</span>
+            <span class="me-4">Spread the word!</span>
             <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
             <!--Twitter-->
             <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -406,7 +425,7 @@
             <!--Linkedin-->
             <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
 
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ms-4" data-dismiss="modal">Close</button>
 
           </div>
 
@@ -418,7 +437,7 @@
     <!--Modal: Name-->
 
     <a><img class="img-fluid z-depth-1" src="img/l1.jpg" alt="video"
-        data-toggle="modal" data-target="#modal1"></a>
+        data-bs-toggle="modal" data-bs-target="#modal1"></a>
       <h4>HTML Body & Header</h4>
   </div>
   <!-- Grid column -->
@@ -444,7 +463,7 @@
 
           <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <span class="mr-4">Spread the word!</span>
+            <span class="me-4">Spread the word!</span>
             <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
             <!--Twitter-->
             <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -453,7 +472,7 @@
             <!--Linkedin-->
             <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
 
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ms-4" data-dismiss="modal">Close</button>
 
           </div>
 
@@ -465,7 +484,7 @@
     <!--Modal: Name-->
 
     <a><img class="img-fluid z-depth-1" src="img/l2.jpg" alt="video"
-        data-toggle="modal" data-target="#modal6"></a>
+        data-bs-toggle="modal" data-bs-target="#modal6"></a>
       <h4>HTML Text Color</h4>
   </div>
   <!-- Grid column -->
@@ -492,7 +511,7 @@
 
           <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <span class="mr-4">Spread the word!</span>
+            <span class="me-4">Spread the word!</span>
             <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
             <!--Twitter-->
             <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
@@ -501,7 +520,7 @@
             <!--Linkedin-->
             <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
 
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ms-4" data-dismiss="modal">Close</button>
 
           </div>
 
@@ -513,7 +532,7 @@
     <!--Modal: Name-->
 
     <a><img class="img-fluid z-depth-1" src="img/l3.jpg" alt="video"
-        data-toggle="modal" data-target="#modal4"></a>
+        data-bs-toggle="modal" data-bs-target="#modal4"></a>
       <h4 class="text-dark">HTML Image</h4>
   </div>
   <!-- Grid column -->
@@ -559,13 +578,23 @@
         <!-- gzone -->
 
             <!-- news -->
-    <section class="container text-center mt-5"  style="height: 200px;   background: linear-gradient(to right, rgba(0, 3, 12, 0.9) 50%, rgba(0, 245, 233, 0.9) 100%), url(img/lap.jpg)no-repeat; background-attachment: fixed">
-        <div class="row">
-          <div class="col pt-3">
-            <h3 class="text-light">Subscribe My News Letter </h3> <form action=""><input id="in" class="" type="text" placeholder="Email" required> <button type="submit" class="btn btn-primary">Submit</button></form>
-          </div>
+<section class="container-fluid py-5" style="background: linear-gradient(to right, rgba(0, 3, 12, 0.9), rgba(0, 245, 233, 0.9)), url(img/lap.jpg) no-repeat center center / cover; background-attachment: fixed;">
+  <div class="container text-center text-white">
+    <h3 class="fw-bold mb-4">Subscribe to My Newsletter</h3>
+    <form class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="newsletterEmail" placeholder="Email" required>
+          <label for="newsletterEmail">Enter your email</label>
         </div>
-    </section>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-light px-4">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
 
         <!-- testimonial -->
 <!-- Section: Testimonials v.1 -->
@@ -654,28 +683,42 @@
         <!-- testimonial -->
 
                 <!-- prefooter -->
-                <section class="container text-center mt-5" style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(68,3,81,1) 35%, rgba(0,212,255,1) 100%);" id="contact">
-                    <!-- <h1>prefooter</h1> -->
-                    <div class="row text-light">
-                      <div class="col-lg-6 col-md-12 mb-lg-0 mb-6">
-                        <h3 class="text-light">Contact Us</h3>
-                        <form action="">
-                          <input type="text" class="form-control" placeholder="Name" required>
-                          <input type="text" class="form-control mt-1" placeholder="Email/Phone No." required>
-                          <textarea name="" id="" class="mt-1 form-control" placeholder="Message"></textarea>
-                         <button class="text-light form-control btn btn-primary" type="submit" id="cthank">Submit</button>
-                        </form>
-                      </div>
-                      <div class="col-lg-6 col-md-12 mb-lg-0 mb-6">
-                        <h3>Review & Feedback</h3>
-                        <p>Appreciate Me By Giving A Review</p>
-                        <button class="btn btn-primary"><i class="fab fa-facebook"></i> Facebook</button><br>
-                        <button class="btn btn-primary mt-2"><i class="fab fa-google"></i> Google</button><br>
-                        <button class="btn btn-primary mt-2"><i class="fab fa-github"></i> Github</button>
-                      </div>
-                    </div>
-                    <hr>
-                </section>
+<section class="container py-5" id="contact">
+  <div class="row">
+    <!-- Contact Form -->
+    <div class="col-lg-6 mb-4">
+      <h3 class="fw-bold mb-4 text-primary">Contact Us</h3>
+      <form>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingName" placeholder="Your Name" required>
+          <label for="floatingName">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="Email or Phone" required>
+          <label for="floatingEmail">Email / Phone No.</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Your Message" id="floatingMessage" style="height: 120px" required></textarea>
+          <label for="floatingMessage">Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" id="cthank">Submit</button>
+      </form>
+    </div>
+
+    <!-- Feedback / Review Buttons -->
+    <div class="col-lg-6 mb-4">
+      <h3 class="fw-bold mb-3">Review & Feedback</h3>
+      <p>Appreciate me by giving a review on:</p>
+      <div class="d-grid gap-2 col-8 mx-auto">
+        <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook me-2"></i> Facebook</a>
+        <a href="#" class="btn btn-outline-danger"><i class="fab fa-google me-2"></i> Google</a>
+        <a href="#" class="btn btn-outline-dark"><i class="fab fa-github me-2"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+</section>
+
                 <!-- prefooter -->
                 
                         <!-- footer -->
@@ -692,7 +735,7 @@
               <div class="col-lg-3 col-md-12 mb-lg-0 mb-3">
                 <h5>Menu</h5>
                 <hr>
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto">
                   <li class="nav-item active">
                   <a class="navbar-brand text-light" href="#"> Home<span class="sr-only">(current)</span></a>
                   </li>
@@ -708,7 +751,7 @@
               <div class="col-lg-3 col-md-12 mb-lg-0 mb-3">
                 <h5>Useful Links</h5>
                 <hr>
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                       <a class="navbar-brand text-light" href="#">Gallery</a>
                   </li>
@@ -716,7 +759,7 @@
                       <a class="navbar-brand text-light" href="#">Blog</a>
                   </li>
                   <li class="nav-item">
-                      <a class="navbar-brand text-light" href="#">Download</a>
+                      <a class="navbar-brand text-light" href="test.html">Test</a>
                   </li>
             </ul>
               </div>
@@ -904,11 +947,7 @@ $("#cthank").click(function(){
     <!-- Optional JavaScript -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
   </body>
 </html>
